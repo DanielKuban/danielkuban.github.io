@@ -1,0 +1,30 @@
+[
+  {
+  "id": "test2",
+  "title": "Test2",
+  "preview": "Das ist der Vorschautext. Ich will schauen, wie das Bild angezeigt wird",
+  "date": "2025-05-09",
+  "image": "assets/images/silvester/20241231_164235.jpg"
+  },
+  {
+  "id": "test",
+  "title": "Test",
+  "preview": "Das ist die Vorschau",
+  "date": "2025-03-04",
+  "image": ""
+  },
+  {
+    "id": "news1",
+    "title": "Eröffnung der Sommersaison",
+    "preview": "Die Hütte öffnet am 15. Juni 2025 wieder für Gäste...",
+    "date": "02.03.2025",
+    "image": "assets/images/news/sommer.jpg"
+  },
+  {
+    "id": "news2",
+    "title": "Neue Solaranlage installiert",
+    "preview": "Nach der Installation läuft unsere Stromversorgung nachhaltiger...",
+    "date": "2025-05-20",
+    "image": "assets/images/news/solaranlage.jpg"
+  }
+]
