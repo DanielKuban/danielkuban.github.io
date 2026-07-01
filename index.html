@@ -1,541 +1,523 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Website der Frederick-Simms-Hütte" />
-        <meta name="author" content="Daniel Kuban" />
-        <title>Frederick-Simms-Hütte</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap Icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call_made" />
-        <!-- SimpleLightbox plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/team.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Nicht von Suchmaschinen indexieren (unterstützt den privaten Charakter) -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Arbeitsproben — Vorname Nachname</title>
 
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Frederick-Simms-Hütte</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#huette">Die Hütte</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Unser Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Touren</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-                        <li class="nav-item highlight"><a class="nav-link" href="https://www.hut-reservation.org/reservation/book-hut/686/wizard" target="_blank" rel="noopener">Reservierung</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <!-- Schriften -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <style>
+    /* ============================================================
+       FARBEN & TYPOGRAFIE  – hier zentral anpassbar
+       ============================================================ */
+    :root {
+      --paper:   #ffffff;
+      --surface: #f3f5f8;   /* Karten-Hintergrund */
+      --ink:     #14161a;   /* Text */
+      --muted:   #5b6270;   /* gedämpfter Text */
+      --line:    #e3e7ee;   /* Trennlinien */
+      --accent:  #2f5bff;   /* Akzentfarbe (Cobalt) */
+      --accent-soft: #e9eefff2;
 
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Willkommen auf der Frederick-Simms-Hütte</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5">Wir befinden uns aktuell im Winterschlaf und freuen uns über deinen Besuch im nächsten Jahr</p>
-                        <a class="btn btn-secondary btn-xl" href="#huette">Mehr erfahren</a>
-                        <p class="text-white-75 mb-5"></p>
-                        <a class="btn btn-primary btn-xl" href="https://www.hut-reservation.org/reservation/book-hut/686/wizard" target="_blank" rel="noopener">Reservierung</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+      --font-display: "Fraunces", Georgia, serif;
+      --font-body: "Inter", system-ui, -apple-system, sans-serif;
+    }
 
+    * { -webkit-font-smoothing: antialiased; }
 
-        <!-- Aktuell -->
-        <section class="page-section bg-primary" id="aktuell">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-center mt-0">Aktuelles</h2>
-                        <hr class="divider" />
-                        <p class="text-muted mb-0">Ab der Saison 2025 ist Jannik Storf der Hüttenwirt.</p>
-                    </div>
-                </div>
-            
-            </div>
-        </section>
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
 
+    /* ---------- Passwort-Sperrbildschirm ---------- */
+    #gate {
+      position: fixed; inset: 0; z-index: 2000;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--paper);
+      padding: 24px;
+    }
+    .gate-card {
+      width: 100%; max-width: 400px;
+      text-align: center;
+    }
+    .gate-mark {
+      width: 52px; height: 52px; margin: 0 auto 22px;
+      display: grid; place-items: center;
+      border-radius: 14px;
+      background: var(--accent); color: #fff;
+      font-family: var(--font-display); font-size: 1.5rem; font-weight: 600;
+    }
+    .gate-card h1 {
+      font-family: var(--font-display);
+      font-size: 1.7rem; font-weight: 600;
+      margin-bottom: 6px; letter-spacing: -0.01em;
+    }
+    .gate-card p { color: var(--muted); font-size: .95rem; margin-bottom: 26px; }
+    #gate input {
+      border: 1px solid var(--line); border-radius: 10px;
+      padding: 13px 15px; font-size: 1rem; text-align: center;
+    }
+    #gate input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+      outline: none;
+    }
+    #gate .btn-unlock {
+      background: var(--ink); color: #fff; border: none;
+      border-radius: 10px; padding: 13px; font-weight: 500;
+      width: 100%; margin-top: 12px; transition: transform .12s ease, background .2s;
+    }
+    #gate .btn-unlock:hover { background: #000; transform: translateY(-1px); }
+    .gate-error {
+      color: #c0392b; font-size: .88rem; margin-top: 14px;
+      min-height: 1.2em; opacity: 0; transition: opacity .2s;
+    }
+    .gate-error.show { opacity: 1; }
 
-        <!-- Die Huette -->
-        <section class="page-section" id="huette">
-            <div class="container px-4 px-lg-5">
-                <h2 class="text-center mt-0">Die Hütte</h2>
-                <hr class="divider" />
-                <div class="row gx-4 gx-lg-5 align-items-center mb-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="assets/img/winter_main.jpg" alt="Frederick-Simms-Hütte" class="img-fluid rounded shadow" />
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="text-muted">
-                            Die Frederick-Simms-Hütte liegt auf 2.004 Metern inmitten der Lechtaler Alpen. Sie bietet Wanderern und Bergsteigern einen idealen Ausgangspunkt für zahlreiche Touren und Überquerungen. Mit 50 Schlafplätzen in drei Matratzenlagern ist sie perfekt für Gruppen und Familien geeignet.
-                        </p>
-                        <a href="huette.html" class="btn btn-primary mt-3">Mehr erfahren</a>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-arrow-bar-up fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">2.004 Höhenmeter</h3>
-                            <p class="text-muted mb-0">Die Hütte liegt auf 2.004 m Höhe.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-signpost-2 fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Zahlreiche Touren</h3>
-                            <p class="text-muted mb-0">Die Hütte eignet sich als Basis für Tagestouren und als Stop für Überquerungen.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-geo-alt fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Lechtaler Alpen</h3>
-                            <p class="text-muted mb-0">Die Lage in den Lechtaler Alpen bietet eine Vielzahl von Gipfeln.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-house fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">50 Schlafplätze</h3>
-                            <p class="text-muted mb-0">Aufgeteilt auf drei Matratzenlager.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-<div class="container">
-<div class="row col-lg-10 col-md-10 mb-12 mb-lg-12">
-  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
+    /* ---------- Seiteninhalt (nach Entsperren sichtbar) ---------- */
+    #app { display: none; }
+    #app.revealed { display: block; animation: fadeup .6s ease both; }
+    @keyframes fadeup { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
+    /* ---------- Kopfbereich / Hero ---------- */
+    .site-header { border-bottom: 1px solid var(--line); }
+    .eyebrow {
+      font-size: .78rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .hero-name {
+      font-family: var(--font-display);
+      font-weight: 600; letter-spacing: -0.02em; line-height: 1.02;
+      font-size: clamp(2.6rem, 7vw, 4.6rem);
+      margin: .35em 0 .25em;
+    }
+    .hero-role { font-size: 1.15rem; color: var(--muted); max-width: 34ch; }
+    .badge-avail {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: .82rem; color: var(--ink);
+      background: var(--surface); border: 1px solid var(--line);
+      padding: 6px 12px; border-radius: 999px;
+    }
+    .badge-avail .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #22c55e; box-shadow: 0 0 0 3px #22c55e33;
+    }
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
+    /* ---------- Filterleiste ---------- */
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filter-btn {
+      border: 1px solid var(--line); background: var(--paper);
+      color: var(--muted); border-radius: 999px;
+      padding: 8px 18px; font-size: .92rem; font-weight: 500;
+      cursor: pointer; transition: all .18s ease;
+    }
+    .filter-btn:hover { border-color: var(--ink); color: var(--ink); }
+    .filter-btn.active { background: var(--ink); border-color: var(--ink); color: #fff; }
 
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
+    /* ---------- Arbeitsproben-Karten ---------- */
+    .work-card {
+      background: var(--paper); border: 1px solid var(--line);
+      border-radius: 16px; overflow: hidden; height: 100%;
+      display: flex; flex-direction: column;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+      cursor: pointer;
+    }
+    .work-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px -20px rgba(20,22,26,.28);
+      border-color: #d3d9e4;
+    }
+    .work-media {
+      aspect-ratio: 16 / 10; position: relative; overflow: hidden;
+      background: var(--surface);
+    }
+    .work-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .work-media .placeholder {
+      width: 100%; height: 100%;
+      display: grid; place-items: center;
+      font-family: var(--font-display); font-size: 2rem; color: #fff;
+    }
+    .work-media .play-badge {
+      position: absolute; inset: 0; margin: auto;
+      width: 58px; height: 58px; border-radius: 50%;
+      background: rgba(255,255,255,.92); color: var(--ink);
+      display: grid; place-items: center; font-size: 1.4rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,.25);
+    }
+    .work-media.text-media {
+      display: grid; place-items: center; padding: 26px;
+      background: linear-gradient(135deg, #f7f9fc, #eef1f7);
+    }
+    .work-media.text-media .quote {
+      font-family: var(--font-display); font-size: 1.15rem;
+      color: var(--ink); text-align: center; line-height: 1.4;
+    }
+    .type-tag {
+      position: absolute; top: 12px; left: 12px;
+      font-size: .72rem; font-weight: 600; letter-spacing: .04em;
+      background: rgba(20,22,26,.82); color: #fff;
+      padding: 4px 10px; border-radius: 999px; backdrop-filter: blur(4px);
+    }
+    .work-body { padding: 20px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+    .work-cat { font-size: .76rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+    .work-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 8px; }
+    .work-desc { font-size: .93rem; color: var(--muted); margin: 0; }
+    .work-more { margin-top: 14px; font-size: .85rem; font-weight: 600; color: var(--ink); display: inline-flex; align-items: center; gap: 5px; }
 
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
+    .section-title { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.01em; }
 
-    <img
-      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
+    /* ---------- Modal ---------- */
+    .modal-content { border: none; border-radius: 18px; }
+    .modal-body h3 { font-family: var(--font-display); font-weight: 600; }
+    .modal-text-full { white-space: pre-line; color: var(--ink); line-height: 1.75; }
+
+    /* ---------- Footer ---------- */
+    footer { border-top: 1px solid var(--line); color: var(--muted); }
+    footer a { color: var(--ink); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (prefers-reduced-motion: reduce) {
+      #app.revealed, * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ==========================================================
+     PASSWORT-SPERRBILDSCHIRM
+     ========================================================== -->
+<div id="gate">
+  <div class="gate-card">
+    <div class="gate-mark">VN</div> <!-- Initialen -->
+    <h1>Arbeitsproben</h1>
+    <p>Dieser Bereich ist geschützt. Bitte gib das Passwort ein, das ich dir mitgeteilt habe.</p>
+    <input type="password" id="pw" class="form-control" placeholder="Passwort" autocomplete="off" autofocus />
+    <button class="btn-unlock" id="unlockBtn">Zugang öffnen</button>
+    <div class="gate-error" id="gateError">Falsches Passwort. Bitte noch einmal versuchen.</div>
   </div>
 </div>
+
+<!-- ==========================================================
+     SEITENINHALT
+     ========================================================== -->
+<div id="app">
+
+  <!-- Kopf / Hero -->
+  <header class="site-header">
+    <div class="container py-5 py-lg-5">
+      <div class="row align-items-end g-4 pt-4 pb-2">
+        <div class="col-lg-8">
+          <span class="eyebrow">Portfolio · Bewerbung</span>
+          <h1 class="hero-name">Vorname<br>Nachname</h1>
+          <p class="hero-role">Kurzer Untertitel zu deiner Rolle oder Ausrichtung — z. B. „Grafikdesignerin & Motion Artist". Ein Satz genügt.</p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <span class="badge-avail"><span class="dot"></span> Offen für neue Projekte</span>
+          <div class="mt-3 small text-muted">
+            <div><i class="bi bi-envelope me-1"></i> name@mail.de</div>
+            <div class="mt-1"><i class="bi bi-geo-alt me-1"></i> Augsburg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Arbeitsproben -->
+  <main class="container py-5">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+      <h2 class="section-title mb-0">Ausgewählte Arbeiten</h2>
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="bild"><i class="bi bi-image me-1"></i>Bilder</button>
+        <button class="filter-btn" data-filter="text"><i class="bi bi-file-text me-1"></i>Texte</button>
+        <button class="filter-btn" data-filter="video"><i class="bi bi-play-circle me-1"></i>Videos</button>
+      </div>
+    </div>
+
+    <div class="row g-4" id="grid"><!-- Karten werden per JavaScript eingefügt --></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 small">
+      <span>© <span id="year"></span> Vorname Nachname</span>
+      <span>
+        <a href="mailto:name@mail.de">E-Mail</a> ·
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="#" target="_blank" rel="noopener">Lebenslauf (PDF)</a>
+      </span>
+    </div>
+  </footer>
 </div>
-</section>
 
-    <!-- Unser Team --> 
-    <section class="page-section bg-light" id="team">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">Unser Team</h2>
-        <hr class="divider" />
-        <div class="row gx-4 gx-lg-5 align-items-center mb-5">
-                            <div class="row gx-4 gx-lg-5 align-items-center mb-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <img src="assets/img/team.jpg" alt="Frederick-Simms-Hütte" class="img-fluid rounded shadow" />
-                    </div>
-                    <div class="col-lg-6">
-
-                        <p class="text-muted">
-                            Seit 2024 wird die Simmshütte von einem neuen, jungen Team geführt. Mit frischer Energie und viel Begeisterung setzen sie die Tradition von Charly Wehrle fort und sorgen dafür, dass die Hütte ihren ursprünglichen, herzlichen Charakter behält. Gäste dürfen sich auf eine familiäre Atmosphäre, Offenheit und echte Bergleidenschaft freuen.
-                        </p>
-                        
-                    </div>
-                </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<div class="container">
-
-                <div class="row position-relative mt-n1-9">
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="team-style1 text-center">
-                            <img src="https://www.bootdey.com/image/480x480/00FFFF/000000" class="border-radius-5" alt="...">
-                            <div class="team-info">
-                                <h3 class="text-primary mb-1 h4">Jannik Storf</h3>
-                                <span class="font-weight-600 text-secondary">Hüttenwirt</span>
-                            </div>
-                            <div class="team-overlay">
-                                <div class="d-table h-100 w-100">
-                                    <div class="d-table-cell align-middle">
-                                        <h3><a href="#" class="text-white">Über Jannik</a></h3>
-                                        <p class="text-white mb-0">Aus Augsburg und neuer Hüttenwirt der Simmshütte. Er hat die Hütte von Charly Wehrle übernommen und führt sie mit viel Herz, Tradition und eigener Handschrift weiter.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="team-style1 text-center">
-                            <img src="https://www.bootdey.com/image/480x480/FF1493/000000" class="border-radius-5" alt="...">
-                            <div class="team-info">
-                                <h3 class="text-primary mb-1 h4">Tist</h3>
-                                <span class="font-weight-600 text-secondary">Alles mögliche</span>
-                            </div>
-                            <div class="team-overlay">
-                                <div class="d-table h-100 w-100">
-                                    <div class="d-table-cell align-middle">
-                                        <h3><a href="#" class="text-white">Über Tist</a></h3>
-                                        <p class="text-white mb-0">Gebürtig aus Belgien, aber längst im Lechtal zuhause. Als Biologe ist er fasziniert von der alpinen Pflanzen- und Tierwelt und erkundet an freien Tagen die umliegenden Gipfel.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div class="team-style1 text-center">
-                            <img src="https://www.bootdey.com/image/480x480/00FF00/000000" class="border-radius-5" alt="...">
-                            <div class="team-info">
-                                <h3 class="text-primary mb-1 h4">Mirjam</h3>
-                                <span class="font-weight-600 text-secondary">Alles mögliche</span>
-                            </div>
-                            <div class="team-overlay">
-                                <div class="d-table h-100 w-100">
-                                    <div class="d-table-cell align-middle">
-                                        <h3><a href="#" class="text-white">Über Mirjam</a></h3>
-                                        <p class="text-white mb-0">Eine bergbegeisterte junge Frau aus Oberschwaben. Sie liebt die familiäre Atmosphäre der Hütte und kennt bis zum Abend fast jeden Gast beim Namen.</p>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Detail-Modal -->
+<div class="modal fade" id="detailModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body px-4 pb-4" id="modalBody"></div>
     </div>
-</section>
+  </div>
+</div>
 
-<!-- Touren Section -->
-<section class="page-section" id="touren">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">Touren & Zustieg</h2>
-        <hr class="divider" />
-        <div class="row gx-4 gx-lg-5 align-items-center mb-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/10798599/js?mw=false"></script>
+<script>
+/* ==========================================================
+   1) PASSWORT-SCHUTZ
+   ==========================================================
+   Passwort wird NICHT im Klartext gespeichert, sondern als SHA-256-Hash.
+   Standard-Passwort:  bewerbung2026
 
-            </div>
-            <div class="col-lg-6">
-                <h2 class="text-center mt-0">Zustieg von Holzau aus</h2>
-                <p class="text-muted">
-                    Die Frederick-Simms-Hütte ist über verschiedene Wanderwege erreichbar. Die klassische Zustiegsroute startet in Holzgau und führt über die Materialseilbahn zur Hütte. Die Karte zeigt dir den genauen Weg und weitere Details.
-                </p>
-                <a href="https://www.alpenvereinaktiv.com/de/bewirtschaftete-huette/frederic-simms-huette/6938700/#dmdtab=oax-tab4" target="_blank" rel="noopener" class="btn btn-primary mt-3">Weitere Touren anzeigen</a>
-            </div>
-        </div>
-        <!-- Touren Slider -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   >> PASSWORT ÄNDERN:
+   Seite im Browser öffnen, F12 (Konsole), eingeben:
+       await sha256("deinNeuesPasswort")
+   Den ausgegebenen Hash in PASSWORD_HASH unten eintragen.
 
-        <div class="touren-slider-container mt-5">
-            <h4 class="mb-3">Weitere Touren ab der Hütte</h4>
-            <div class="swiper tourenSwiper">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide text-center">
-                        <div class="card bg-white border shadow rounded-3 h-100">
-                            <div class="card-body">
-                                <h6 class="card-title">Titel </h6>
-                                <p class="card-text small">Evtl noch ein Text</p>
-                                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/26871090/js?mw=true"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide text-center">
-                        <div class="card bg-white border shadow rounded-3 h-100">
-                            <div class="card-body">
-                                <h6 class="card-title">Übergang zur Ansbacher Hütte</h6>
-                                <p class="card-text small">Beliebte Hüttentour, ca. 6h, landschaftlich reizvoll.</p>
-                                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/26789793/js?mw=true&s=m"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide text-center">
-                        <div class="card bg-white border shadow rounded-3 h-100">
-                            <div class="card-body">
-                                <h6 class="card-title">Kleine Rundwanderung</h6>
-                                <p class="card-text small">Leichte Tour für Familien, ca. 1,5h, schöne Aussicht.</p>
-                                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/113073918/js?mw=true&s=m"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide text-center">
-                        <div class="card bg-white border shadow rounded-3 h-100">
-                            <div class="card-body">
-                                <i class="bi-water fs-1 text-info mb-2"></i>
-                                <h6 class="card-title">Seewiesenscharte</h6>
-                                <p class="card-text small">Panoramatour, ca. 2,5h, für geübte Wanderer.</p>
-                                <script type="text/javascript" src="https://www.alpenvereinaktiv.com/de/embed/113073918/js?mw=true&s=m"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide text-center">
-                        <div class="card bg-white border shadow rounded-3 h-100">
-                            <div class="card-body">
-                                <i class="bi-arrow-up-right-circle fs-1 text-danger mb-2"></i>
-                                <h6 class="card-title">Weitere Touren</h6>
-                                <p class="card-text small">Findest du bei alpenvereinaktiv</p>
-                                <a href="https://www.alpenvereinaktiv.com/de/bewirtschaftete-huette/frederic-simms-huette/6938700/#dmdtab=oax-tab4" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">alpenvereinaktiv</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more slides as needed -->
-                </div>
-                <!-- Navigation buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-        </div>
+   HINWEIS: Dieser Schutz läuft im Browser und hält Suchmaschinen und
+   Zufallsbesucher fern – für eine Bewerbung meist ausreichend, aber
+   technisch nicht 100 % sicher. Für echten Schutz: Passwortschutz beim
+   Hoster (z. B. Netlify) oder .htaccess.
+   ========================================================== */
+  const PASSWORD_HASH = "42732757bf441fa121541ffd7d422f0a475663f026652aa6df18b86a8ab083ff";
 
-        <style>
-        .touren-slider-container .swiper {
-            padding-bottom: 30px;
-        }
-        .touren-slider-container .swiper-slide {
-            width: 220px;
-            max-width: 90vw;
-            display: flex;
-            justify-content: center;
-            align-items: stretch;
-        }
-        .touren-slider-container .card {
-            min-height: 220px;
-        }
-        @media (max-width: 600px) {
-            .touren-slider-container .swiper-slide {
-                width: 80vw;
-            }
-        }
-        </style>
+  // Browser-Krypto (https/localhost), sonst automatisch die eingebaute
+  // JS-Variante – funktioniert damit auch beim lokalen Doppelklick (file://).
+  async function sha256(str) {
+    if (window.crypto && crypto.subtle && window.isSecureContext) {
+      try {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+        return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, "0")).join("");
+      } catch (e) { /* Fallback unten */ }
+    }
+    return sha256js(unescape(encodeURIComponent(str)));
+  }
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            new Swiper('.tourenSwiper', {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                breakpoints: {
-                    0: { slidesPerView: 1 },
-                    600: { slidesPerView: 2 },
-                    900: { slidesPerView: 3 }
-                }
-            });
-        });
-        </script>
-    </div>
-</section>
+  function sha256js(ascii) {
+    function rr(n, x) { return (x >>> n) | (x << (32 - n)); }
+    var mathPow = Math.pow, maxWord = mathPow(2, 32), result = '';
+    var words = [], asciiBitLength = ascii.length * 8;
+    var hash = sha256js.h = sha256js.h || [];
+    var k = sha256js.k = sha256js.k || [];
+    var primeCounter = k.length, isComposite = {};
+    for (var candidate = 2; primeCounter < 64; candidate++) {
+      if (!isComposite[candidate]) {
+        for (var i = 0; i < 313; i += candidate) { isComposite[i] = candidate; }
+        hash[primeCounter] = (mathPow(candidate, .5) * maxWord) | 0;
+        k[primeCounter++] = (mathPow(candidate, 1 / 3) * maxWord) | 0;
+      }
+    }
+    ascii += '\x80';
+    while (ascii.length % 64 - 56) ascii += '\x00';
+    for (i = 0; i < ascii.length; i++) {
+      var j = ascii.charCodeAt(i);
+      if (j >> 8) return;
+      words[i >> 2] |= j << ((3 - i) % 4) * 8;
+    }
+    words[words.length] = ((asciiBitLength / maxWord) | 0);
+    words[words.length] = (asciiBitLength);
+    for (j = 0; j < words.length;) {
+      var w = words.slice(j, j += 16), oldHash = hash;
+      hash = hash.slice(0, 8);
+      for (i = 0; i < 64; i++) {
+        var w15 = w[i - 15], w2 = w[i - 2], a = hash[0], e = hash[4];
+        var temp1 = hash[7] + (rr(6, e) ^ rr(11, e) ^ rr(25, e))
+          + ((e & hash[5]) ^ ((~e) & hash[6])) + k[i]
+          + (w[i] = (i < 16) ? w[i] : (
+              w[i - 16] + (rr(7, w15) ^ rr(18, w15) ^ (w15 >>> 3))
+              + w[i - 7] + (rr(17, w2) ^ rr(19, w2) ^ (w2 >>> 10))
+            ) | 0);
+        var temp2 = (rr(2, a) ^ rr(13, a) ^ rr(22, a))
+          + ((a & hash[1]) ^ (a & hash[2]) ^ (hash[1] & hash[2]));
+        hash = [(temp1 + temp2) | 0].concat(hash);
+        hash[4] = (hash[4] + temp1) | 0;
+      }
+      for (i = 0; i < 8; i++) { hash[i] = (hash[i] + oldHash[i]) | 0; }
+    }
+    for (i = 0; i < 8; i++) {
+      for (j = 3; j + 1; j--) {
+        var b = (hash[i] >> (j * 8)) & 255;
+        result += ((b < 16) ? 0 : '') + b.toString(16);
+      }
+    }
+    return result;
+  }
 
-    <!-- Newsletter-->
-    <section class="page-section bg-dark text-white">
-        <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">Die Hütten News!</h2>
-        <p class="text-muted mb-5">Trag dich in unseren E-Mail-Verteiler ein, um auf dem Laufendem zu bleiben.</p>
-        
-                <!-- Newsletter Subscription Form -->
-        <div class="row gx-4 gx-lg-5 justify-content-center mt-4 text-black">
-            <div class="col-lg-6">
-            <div class="card shadow">
-                <div class="card-body">
-                <h5 class="card-title">Newsletter abonnieren</h5>
-                <form id="newsletterForm">
-                    <div class="mb-3">
-                    <label for="newsletterEmail" class="form-label">E-Mail-Adresse</label>
-                    <input type="email" class="form-control" id="newsletterEmail" placeholder="name@example.com" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Abonnieren</button>
-                </form>
-                <div id="newsletterSuccess" class="mt-3 text-success d-none">Vielen Dank für deine Anmeldung!</div>
-                <div id="newsletterError" class="mt-3 text-danger d-none">Fehler bei der Anmeldung. Bitte versuche es erneut.</div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
+  const gate = document.getElementById("gate");
+  const app = document.getElementById("app");
+  const pwInput = document.getElementById("pw");
+  const gateError = document.getElementById("gateError");
+  let unlocked = false;
 
+  async function tryUnlock() {
+    try {
+      const hash = await sha256(pwInput.value);
+      if (hash === PASSWORD_HASH) {
+        unlocked = true;
+        gate.style.display = "none";
+        app.classList.add("revealed");
+        renderCards("all");
+      } else {
+        gateError.textContent = "Falsches Passwort. Bitte noch einmal versuchen.";
+        gateError.classList.add("show");
+        pwInput.value = "";
+        pwInput.focus();
+      }
+    } catch (e) {
+      gateError.textContent = "Es ist ein Fehler aufgetreten. Bitte Seite neu laden.";
+      gateError.classList.add("show");
+      console.error(e);
+    }
+  }
 
-    <!-- Kontakt-->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">Melde dich bei uns!</h2>
-            <hr class="divider" />
-            <p class="text-muted mb-5">
-                Hast du eine besondere Anfrage oder ein Anliegen? Dann kontaktiere uns über das Formular, oder ruf uns an. Schlafplatzreservierungen bitte soweit möglich über das 
-                <a href="https://www.hut-reservation.org/reservation/book-hut/686/wizard" target="_blank" rel="noopener">Online-Reservierungsportal</a> des DAV.
-            </p>
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-            <div class="col-lg-6">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                <!-- Name input-->
-                <div class="form-floating mb-3">
-                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                <label for="name">Name</label>
-                <div class="invalid-feedback" data-sb-feedback="name:required">Wir benötigen deinen Namen.</div>
-                </div>
-                <!-- Email address input-->
-                <div class="form-floating mb-3">
-                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                <label for="email">E-Mail</label>
-                <div class="invalid-feedback" data-sb-feedback="email:required">Wir benötigen eine gültige E-Mail um dir zu antworten.</div>
-                <div class="invalid-feedback" data-sb-feedback="email:email">E-Mail-Adresse ist ungültig.</div>
-                </div>
-                <!-- Phone number input-->
-                <div class="form-floating mb-3">
-                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                <label for="phone">Telefonnummer</label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">Wir benötigen eine Telefonnummer.</div>
-                </div>
-                <!-- Message input-->
-                <div class="form-floating mb-3">
-                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                <label for="message">Deine Nachricht an uns</label>
-                <div class="invalid-feedback" data-sb-feedback="message:required">Nenne uns dein Anliegen.</div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
-                    <div class="fw-bolder">Nachricht erfolgreich versendet!</div>
-                    To activate this form, sign up at
-                    <br />
-                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Fehler beim versenden der Nachricht! Versuche es erneut oder schreib uns eine E-Mail.</div></div>
-                <!-- Submit Button-->
-                <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Absenden</button></div>
-            </form>
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-4 text-center mb-5 mb-lg-0">
-            <i class="bi-phone fs-2 mb-3 text-muted"></i>
-            <p>Hüttentelefon:</p>
-            <div>+43 664 484 0093</div>
-            </div>
-            <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-envelope fs-2 mb-3 text-muted"></i>
-                        <p>E-Mail:</p>
-                        <div><a href="mailto:reservierung@simmshuette.com">reservierung@simmshuette.com</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted">
-                    Copyright &copy; 2025 - Frederick-Simms-Hütte |
-                    <a href="impressum.html" class="text-muted">Simpressum</a>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-   
-           <script>
-        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Hier kann ein echter Newsletter-Service angebunden werden (z.B. Mailchimp, Brevo, etc.)
-            // Demo: Zeige Erfolgsmeldung
-            document.getElementById('newsletterSuccess').classList.remove('d-none');
-            document.getElementById('newsletterError').classList.add('d-none');
-            this.reset();
-        });
-        </script>
-   
-   
-    </body>
+  document.getElementById("unlockBtn").addEventListener("click", tryUnlock);
+  pwInput.addEventListener("keydown", e => { if (e.key === "Enter") tryUnlock(); });
+  pwInput.addEventListener("input", () => gateError.classList.remove("show"));
+
+/* ==========================================================
+   2) ARBEITSPROBEN
+   ==========================================================
+   Hier trägst du deine Arbeiten ein. Jede Probe ist ein Objekt.
+   Felder:
+     type:     "bild" | "text" | "video"
+     category: kurze Kategorie/Label (z. B. "Branding", "Reportage")
+     title:    Titel der Arbeit
+     desc:     kurze Beschreibung (1–2 Sätze)
+     src:      Bilddatei ODER Video-Einbettung ODER voller Text
+               - bild:  "bilder/meinbild.jpg"  (Datei neben dieser HTML ablegen)
+               - video: YouTube/Vimeo-EMBED-URL, z. B.
+                        "https://www.youtube.com/embed/XXXXXXXX"
+                        oder lokale Datei "videos/clip.mp4"
+     poster:   (nur video, optional) Vorschaubild
+     color:    (optional) Farbverlauf für Platzhalter, wenn kein Bild da ist
+   ========================================================== */
+  const works = [
+    {
+      type: "bild", category: "Branding", title: "Corporate Design – Café Nord",
+      desc: "Logo, Farbwelt und Speisekarte für ein Café. Ersetze das Platzhalterbild durch deine Datei.",
+      src: "", color: "linear-gradient(135deg,#2f5bff,#7aa2ff)"
+    },
+    {
+      type: "video", category: "Motion", title: "Imagefilm – 60 Sekunden",
+      desc: "Kurzer Imagefilm. Trage oben eine YouTube-/Vimeo-Embed-URL ein.",
+      src: "", color: "linear-gradient(135deg,#14161a,#3a3f4b)"
+    },
+    {
+      type: "text", category: "Reportage", title: "Zwischen den Zeilen",
+      desc: "Längerer Textbeitrag. Klick öffnet den vollständigen Text im Fenster.",
+      src: "Hier steht dein vollständiger Text.\n\nDu kannst mit Leerzeilen Absätze bilden. Ersetze diesen Beispieltext durch deine echte Arbeitsprobe – etwa einen Artikel, ein Konzept oder einen Ausschnitt aus einer längeren Arbeit."
+    },
+    {
+      type: "bild", category: "Illustration", title: "Editorial-Illustrationen",
+      desc: "Reihe von Illustrationen für ein Magazin.",
+      src: "", color: "linear-gradient(135deg,#ff6b6b,#ffb26b)"
+    },
+    {
+      type: "bild", category: "UI Design", title: "App-Konzept – Wetter",
+      desc: "Interface-Studie mit Fokus auf Klarheit.",
+      src: "", color: "linear-gradient(135deg,#0ea5a4,#6ee7d5)"
+    },
+    {
+      type: "text", category: "Konzept", title: "Kampagnen-Konzept",
+      desc: "Strategiepapier für eine Social-Media-Kampagne.",
+      src: "Ausgangslage, Idee, Umsetzung …\n\nErsetze diesen Text durch dein echtes Konzept."
+    }
+  ];
+
+  const typeLabels = { bild: "Bild", text: "Text", video: "Video" };
+  const grid = document.getElementById("grid");
+
+  function mediaHTML(w, i) {
+    if (w.type === "bild") {
+      const inner = w.src
+        ? `<img src="${w.src}" alt="${w.title}">`
+        : `<div class="placeholder" style="background:${w.color || '#2f5bff'}">${w.title[0]}</div>`;
+      return `<div class="work-media"><span class="type-tag">${typeLabels.bild}</span>${inner}</div>`;
+    }
+    if (w.type === "video") {
+      const poster = w.poster
+        ? `<img src="${w.poster}" alt="${w.title}">`
+        : `<div class="placeholder" style="background:${w.color || '#14161a'}"></div>`;
+      return `<div class="work-media"><span class="type-tag">${typeLabels.video}</span>${poster}<div class="play-badge"><i class="bi bi-play-fill"></i></div></div>`;
+    }
+    // text
+    return `<div class="work-media text-media"><span class="type-tag">${typeLabels.text}</span><div class="quote">„${w.title}"</div></div>`;
+  }
+
+  function renderCards(filter) {
+    grid.innerHTML = "";
+    works.forEach((w, i) => {
+      if (filter !== "all" && w.type !== filter) return;
+      const col = document.createElement("div");
+      col.className = "col-md-6 col-lg-4";
+      col.innerHTML = `
+        <article class="work-card" data-index="${i}">
+          ${mediaHTML(w, i)}
+          <div class="work-body">
+            <span class="work-cat">${w.category}</span>
+            <h3 class="work-title">${w.title}</h3>
+            <p class="work-desc">${w.desc}</p>
+            <span class="work-more">Ansehen <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </article>`;
+      col.querySelector(".work-card").addEventListener("click", () => openDetail(i));
+      grid.appendChild(col);
+    });
+  }
+
+  /* Filter-Buttons */
+  document.getElementById("filters").addEventListener("click", e => {
+    const btn = e.target.closest(".filter-btn");
+    if (!btn) return;
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    renderCards(btn.dataset.filter);
+  });
+
+  /* Detailansicht im Modal */
+  const detailModal = new bootstrap.Modal(document.getElementById("detailModal"));
+  const modalBody = document.getElementById("modalBody");
+
+  function openDetail(i) {
+    const w = works[i];
+    let content = `<span class="work-cat">${w.category}</span><h3 class="mb-3">${w.title}</h3>`;
+
+    if (w.type === "video" && w.src) {
+      const isFile = /\.(mp4|webm|ogg)$/i.test(w.src);
+      content += isFile
+        ? `<video controls style="width:100%;border-radius:12px;"><source src="${w.src}"></video>`
+        : `<div class="ratio ratio-16x9 rounded overflow-hidden"><iframe src="${w.src}" allowfullscreen frameborder="0"></iframe></div>`;
+    } else if (w.type === "video") {
+      content += `<div class="alert alert-secondary">Hier erscheint dein Video, sobald du oben im Code eine Embed-URL einträgst.</div>`;
+    } else if (w.type === "bild") {
+      content += w.src
+        ? `<img src="${w.src}" alt="${w.title}" style="width:100%;border-radius:12px;">`
+        : `<div class="work-media" style="border-radius:12px;"><div class="placeholder" style="background:${w.color};min-height:280px;">${w.title[0]}</div></div>`;
+      content += `<p class="text-muted mt-3 mb-0">${w.desc}</p>`;
+    } else { // text
+      content += `<p class="modal-text-full">${w.src}</p>`;
+    }
+    modalBody.innerHTML = content;
+    detailModal.show();
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
 </html>
-
-        <script>
-        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Hier kann ein echter Newsletter-Service angebunden werden (z.B. Mailchimp, Brevo, etc.)
-            // Demo: Zeige Erfolgsmeldung
-            document.getElementById('newsletterSuccess').classList.remove('d-none');
-            document.getElementById('newsletterError').classList.add('d-none');
-            this.reset();
-        });
-        </script>
